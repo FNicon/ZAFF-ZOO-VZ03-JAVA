@@ -5,7 +5,7 @@ import animal.airanimal.phasianidae.Phasianidae;
 /**
  * Created by asus on 26-Mar-17.
  */
-public class SeaDragon extends Phasianidae {
+public class SeaDragon extends Syngnathydae {
     public SeaDragon() {
         super();
         species = "Phycodurus eques";

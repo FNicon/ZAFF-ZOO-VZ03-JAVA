@@ -5,7 +5,7 @@ import animal.landanimal.LandAnimal;
 /**
  * Created by asus on 26-Mar-17.
  */
-public class Zebra extends LandAnimal {
+public class Zebra extends Equidae {
     Zebra() {
         super();
         species = "Equus quagga";

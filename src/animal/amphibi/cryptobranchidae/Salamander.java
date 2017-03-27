@@ -10,7 +10,7 @@ public class Salamander extends Cryptobranchidae{
         species = "Adnrias japonicus";
         experience = "Salamander";
         berat = 300;
-        animal_char = 'x';
+        animal_char = 'U';
         jenis_makanan = 2;
     }
 }
