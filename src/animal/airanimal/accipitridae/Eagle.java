@@ -15,3 +15,4 @@ public class Eagle extends Accipitridae {
         jenis_makanan = 2;
     }
 }
+
