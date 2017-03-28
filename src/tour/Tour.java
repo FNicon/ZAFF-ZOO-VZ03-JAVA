@@ -3,18 +3,21 @@
  */
 package tour;
 
+import cell.Cell;
+import pointer.Pointer;
+
 /**
  * @author Finiko
  *
  */
 public class Tour {
-  private int now_x;
-  private int now_y;
+  private int nowX;
+  private int nowY;
   
-/*  public boolean CheckUp(){
-    return((GetVal(now_x,now_y-1)).IsHabitat());
-  }
-  public boolean CheckDown(){
+//  public boolean CheckUp(){
+//    return((Cell.getPoint(nowX,nowY-1)).IsHabitat());
+//  }
+/*  public boolean CheckDown(){
     return((GetVal(now_x,now_y-1)).IsHabitat());
   }
   public boolean CheckLeft(){
