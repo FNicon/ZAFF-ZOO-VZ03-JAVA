@@ -2,25 +2,29 @@
  * 
  */
 package habitat;
+import pointer.Pointer;
 
 /**
  * @author Finiko
  *
  */
-public final class Habitat {
+public class Habitat extends Pointer {
   private int type;
-  private int cage_number;
+  private int cageNumber;
   
-  void SetCageNumber(int cage_input){
-	  cage_number=cage_input;
+  public void setCageNumber(int cageInput){
+	  cageNumber=cageInput;
   }
-  int GetCageNumber(){
-	  return(cage_number);
+  public int getCageNumber(){
+	  return(cageNumber);
   }
-  int GetType(){
+  int getType(){
 	  return(type);
   }
-  void SetType(int type_input){
+  public void setType(int type_input){
 	  type=type_input;
+  }
+  public boolean isHabitat(){
+	  return(true);
   }
 }

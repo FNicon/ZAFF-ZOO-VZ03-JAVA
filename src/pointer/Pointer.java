@@ -2,31 +2,25 @@
  * 
  */
 package pointer;
-
+import render.Render;
 /**
  * @author Finiko
  *
  */
-public abstract class Pointer {
-  //private E type;
+public class Pointer extends Render{
   private int positionX;
   private int positionY;
   
-  public Pointer(int x, int y){
-	  positionX=x;
-	  positionY=y;
+  public Pointer(){
+  }
+  public Pointer(int inputX, int inputY){
+    positionX=inputX;
+    positionY=inputY;
   }
   public int getPositionX(){
-	  return(positionX);
+    return(positionX);
   }
   public int getPositionY(){
-	  return(positionY);
+    return(positionY);
   }
-/*  public E getType(){
-	  return(type);
-  }
-  public void setType(E inputType){
-	  type=inputType;
-  }*/
-  
 }
