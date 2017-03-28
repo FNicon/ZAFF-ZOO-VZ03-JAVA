@@ -3,6 +3,9 @@
  */
 package tour;
 
+import cell.Cell;
+import pointer.Pointer;
+
 /**
  * @author Finiko
  *
