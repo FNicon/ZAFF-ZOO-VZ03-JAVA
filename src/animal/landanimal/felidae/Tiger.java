@@ -1,9 +1,15 @@
 package animal.landanimal.felidae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Tiger.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Tiger extends Felidae{
+    /**
+     * Konstruktor Tiger
+     */
     public Tiger() {
         super();
         species = "Panthera tigris tigris";
@@ -11,6 +17,6 @@ public class Tiger extends Felidae{
         berat = 2000;
         animal_char = 'T';
         jenis_makanan =2;
-        SetEnemy('C');
+        setEnemy('C');
     }
 }

@@ -1,10 +1,16 @@
 package animal.airanimal.psittacifurmes;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama             : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Cockatoo.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Cockatoo extends Psittacifurmes {
-    public Cockatoo() {
+  /**
+   * Konstruktor Cockatoo
+   */
+  public Cockatoo() {
         super();
         species = "Calyptorhynchus lathami";
         experience = "It can talk??";

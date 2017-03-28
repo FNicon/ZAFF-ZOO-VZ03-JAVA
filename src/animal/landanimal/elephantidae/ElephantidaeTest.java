@@ -15,7 +15,7 @@ class ElephantidaeTest {
     void getFamili() {
         Elephantidae E = new Elephantidae();
         String S = "Elephantidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

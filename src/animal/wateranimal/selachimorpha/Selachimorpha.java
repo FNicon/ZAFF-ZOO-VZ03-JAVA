@@ -3,9 +3,15 @@ package animal.wateranimal.selachimorpha;
 import animal.wateranimal.WaterAnimal;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Selachimorpha.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Selachimorpha extends WaterAnimal {
+    /**
+     * Konstruktor Selachimorpha
+     */
     public Selachimorpha() {
         super();
         famili = "Selachimorpha";

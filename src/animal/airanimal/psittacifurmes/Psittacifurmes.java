@@ -3,10 +3,16 @@ package animal.airanimal.psittacifurmes;
 import animal.airanimal.AirAnimal;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama             : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Psittacifurmes.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Psittacifurmes extends AirAnimal {
-    Psittacifurmes(){
+    /**
+     * Konstruktor tanpa parameter Psittacifurmes
+     */
+    public Psittacifurmes(){
         super();
         famili = "Psittacifurmes";
     }

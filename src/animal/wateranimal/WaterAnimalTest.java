@@ -14,7 +14,7 @@ class WaterAnimalTest {
     @Test
     void getType() {
         WaterAnimal A = new WaterAnimal();
-        assertTrue(A.GetType()[2]== 1);
+        assertTrue(A.getType()[2]== 1);
     }
 
 }

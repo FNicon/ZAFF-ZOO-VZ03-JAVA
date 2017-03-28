@@ -15,35 +15,35 @@ class PandaTest {
     void getFoodNum() {
         Panda E = new Panda();
         int I = 450;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Panda E = new Panda();
         char C = 'P';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Panda E = new Panda();
         String S = "Ailuropoda melanoleuca";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Panda E = new Panda();
         String S = "Ursoidea";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Panda E = new Panda();
         String S = "The panda is eating bamboos";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

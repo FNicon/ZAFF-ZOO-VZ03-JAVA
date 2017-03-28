@@ -3,10 +3,16 @@ package animal.wateranimal.syngnathydae;
 import animal.wateranimal.WaterAnimal;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Syngnathydae.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Syngnathydae extends WaterAnimal {
-    Syngnathydae(){
+    /**
+     * Konstruktor Syngnathydae
+     */
+    public Syngnathydae(){
         super();
         famili = "Syngnathydae";
     }

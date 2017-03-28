@@ -1,7 +1,10 @@
 package animal.wateranimal.cetacea;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Dolphin.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Dolphin extends Cetacea{
     public Dolphin() {

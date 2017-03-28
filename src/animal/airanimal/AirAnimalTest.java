@@ -14,7 +14,7 @@ class AirAnimalTest {
     @Test
     void getType() {
         AirAnimal A = new AirAnimal();
-        assertTrue(A.GetType()[1]== 1);
+        assertTrue(A.getType()[1]== 1);
     }
 
 }

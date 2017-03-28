@@ -3,16 +3,22 @@ package animal.airanimal.accipitridae;
 import animal.airanimal.accipitridae.Accipitridae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Eagle.java
+ * <br>Tanggal      : 27-Mar-17
  */
 public class Eagle extends Accipitridae {
-    public Eagle() {
-        super();
-        species = "Aquila chrysaetos";
-        experience = "screeech!";
-        berat = 60;
-        animal_char = 'E';
-        jenis_makanan = 2;
-    }
+  /**
+   * Konstruktor Eagle
+   */
+  public Eagle() {
+    super();
+    species = "Aquila chrysaetos";
+    experience = "screeech!";
+    berat = 60;
+    animal_char = 'E';
+    jenis_makanan = 2;
+  }
 }
 

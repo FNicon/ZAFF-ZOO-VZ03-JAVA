@@ -3,9 +3,15 @@ package animal.airanimal.accipitridae;
 import animal.airanimal.AirAnimal;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Accipitridae.java
+ * <br>Tanggal      : 27-Mar-17
  */
 public class Accipitridae  extends AirAnimal {
+    /**
+     * Konstruktor Accipitridae
+     */
     public Accipitridae(){
         super();
         famili = "Accipitridae";

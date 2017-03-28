@@ -1,9 +1,15 @@
 package animal.landanimal.felidae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Lion.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Lion extends Felidae{
+    /**
+     * Konstruktor Lion
+     */
     public Lion() {
         super();
         species = "Panthera leo";
@@ -11,6 +17,6 @@ public class Lion extends Felidae{
         berat = 1800;
         animal_char = 'L';
         jenis_makanan =2;
-        SetEnemy('A');
+        setEnemy('A');
     }
 }

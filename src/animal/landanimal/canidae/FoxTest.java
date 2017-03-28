@@ -15,35 +15,35 @@ class FoxTest {
     void getFoodNum() {
         Fox E = new Fox();
         int I = 12;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Fox E = new Fox();
         char C = 'Y';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Fox E = new Fox();
         String S = "Vulpes lagopus";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Fox E = new Fox();
         String S = "Canidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Fox E = new Fox();
         String S = "What does the fox says ?";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

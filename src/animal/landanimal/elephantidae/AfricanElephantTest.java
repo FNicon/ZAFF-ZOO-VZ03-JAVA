@@ -15,35 +15,35 @@ class AfricanElephantTest {
     void getFoodNum() {
         AfricanElephant E = new AfricanElephant();
         int I = 30000;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         AfricanElephant E = new AfricanElephant();
         char C = 'G';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         AfricanElephant E = new AfricanElephant();
         String S = "Loxodonta";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         AfricanElephant E = new AfricanElephant();
         String S = "Elephantidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         AfricanElephant E = new AfricanElephant();
         String S = "This elephant originated from africa";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

@@ -1,15 +1,21 @@
 package animal.wateranimal.selachimorpha;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : WhiteShark.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class WhiteShark extends Selachimorpha{
+    /**
+     * Konstruktor WhiteShark
+     */
     public WhiteShark() {
         species = "Carcharodon carcharias";
         experience = "It's a Big Shark";
         berat = 9000;
         animal_char = 'S';
         jenis_makanan = 2;
-        SetEnemy('D');
+        setEnemy('D');
     }
 }

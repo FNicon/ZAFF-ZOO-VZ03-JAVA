@@ -15,7 +15,7 @@ class UrsoideaTest {
     void getFamili() {
         Ursoidea E = new Ursoidea();
         String S = "Ursoidea";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

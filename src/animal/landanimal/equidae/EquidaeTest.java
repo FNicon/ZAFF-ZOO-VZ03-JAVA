@@ -15,7 +15,7 @@ class EquidaeTest {
     void getFamili() {
         Equidae E = new Equidae();
         String S = "Equidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

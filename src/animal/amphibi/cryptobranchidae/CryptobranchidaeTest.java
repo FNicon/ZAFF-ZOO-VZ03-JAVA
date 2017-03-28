@@ -15,7 +15,7 @@ class CryptobranchidaeTest {
     void getFamili() {
         Cryptobranchidae E = new Cryptobranchidae();
         String S = "Cryptobranchidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

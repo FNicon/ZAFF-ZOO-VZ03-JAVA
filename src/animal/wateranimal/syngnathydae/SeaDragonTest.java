@@ -15,35 +15,35 @@ class SeaDragonTest {
     void getFoodNum() {
         SeaDragon E = new SeaDragon();
         int I = 2;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         SeaDragon E = new SeaDragon();
         char C = 'V';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         SeaDragon E = new SeaDragon();
         String S = "Phycodurus eques";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         SeaDragon E = new SeaDragon();
         String S = "Syngnathydae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         SeaDragon E = new SeaDragon();
         String S = "It's a Dragon but on water";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

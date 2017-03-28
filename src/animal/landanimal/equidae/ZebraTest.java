@@ -15,35 +15,35 @@ class ZebraTest {
     void getFoodNum() {
         Zebra E = new Zebra();
         int I = 1750;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Zebra E = new Zebra();
         char C = 'Z';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Zebra E = new Zebra();
         String S = "Equus quagga";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Zebra E = new Zebra();
         String S = "Equidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Zebra E = new Zebra();
         String S = "Its like a horse but black and white";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

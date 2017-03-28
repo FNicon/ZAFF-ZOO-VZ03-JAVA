@@ -24,9 +24,9 @@ public class Cell{
 
   private int jumlahKandang;
 
-  /** @brief constructor
-   *  @I.S Cell tidak terdefinisi
-   *  @F.S Cell terdefinisi dengan ukuran default
+  /**  constructor
+   *  I.S Cell tidak terdefinisi
+   *  F.S Cell terdefinisi dengan ukuran default
    */
   public Cell(){
     sizeX=50;
@@ -40,11 +40,10 @@ public class Cell{
       }
     }
   }
-  /** @brief Constructor dengan parameter
-   * 
-   * @param inputX
-   * @param inputY
-   * @param inputKandang
+  /** brief Constructor dengan parameter
+   * @param inputX posisi X
+   * @param inputY posisi Y
+   * @param inputKandang jumlah kandang
    * I.S x,y, dan jumlah_kandang terdefinisi
    * F.S Cell terdefinisi dengan ukuran yang sesuai
    */
@@ -62,7 +61,7 @@ public class Cell{
   }
   /**
    * Setter Cage
-   * @param inputKandang
+   * @param inputKandang jumlah kandang
    */
   public void setCage(int inputKandang){
     jumlahKandang = inputKandang;
@@ -83,18 +82,19 @@ public class Cell{
     return(sizeY);
   }
   /**
-   * @param inputX
-   * @param inputY
+   * @param inputX posisi X
+   * @param inputY posisi Y
    * @return Pointer
    */
   public Pointer getPoint(int inputX, int inputY){
     return(point[inputX][inputY]);  
   }
   /**
-   * @param inputX
-   * @param inputY
-   * @I.S x,y, dan jumlah_kandang terdefinisi
-   * @F.S Cell terdefinisi dengan ukuran yang sesuai
+   * @param inputX posisi X
+   * @param inputY posisi Y
+   * @param inputPoint jenis point
+   * I.S x,y, dan jumlah_kandang terdefinisi
+   * F.S Cell terdefinisi dengan ukuran yang sesuai
    */
   public void setPoint(int inputX, int inputY, Pointer inputPoint){
     point[inputX][inputY]=inputPoint;

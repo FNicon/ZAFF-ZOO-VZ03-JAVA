@@ -15,7 +15,7 @@ class SyngnathydaeTest {
     void getFamili() {
         Syngnathydae E = new Syngnathydae();
         String S = "Syngnathydae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

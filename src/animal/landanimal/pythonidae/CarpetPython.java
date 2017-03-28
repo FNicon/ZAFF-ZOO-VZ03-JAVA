@@ -1,9 +1,15 @@
 package animal.landanimal.pythonidae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : CarpetPython.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class CarpetPython extends Pythonidae{
+    /**
+     * Konstruktor CarpetPython
+     */
     public CarpetPython() {
         super();
         species = "Morelia spilota";

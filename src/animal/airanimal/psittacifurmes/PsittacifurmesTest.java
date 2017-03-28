@@ -15,7 +15,7 @@ class PsittacifurmesTest {
     void getFamili() {
         Psittacifurmes E = new Psittacifurmes();
         String S = "Psittacifurmes";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

@@ -15,7 +15,7 @@ class PythonidaeTest {
     void getFamili() {
         Pythonidae E = new Pythonidae();
         String S = "Pythonidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

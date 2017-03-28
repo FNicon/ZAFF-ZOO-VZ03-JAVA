@@ -14,7 +14,7 @@ class AnimalTest {
     @Test
     void getType() {
         Animal A = new Animal();
-        assertTrue((A.GetType()[0]== 0)&&(A.GetType()[1]== 0)&&(A.GetType()[2]== 0));
+        assertTrue((A.getType()[0]== 0)&&(A.getType()[1]== 0)&&(A.getType()[2]== 0));
     }
 
 }

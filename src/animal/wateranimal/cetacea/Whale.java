@@ -1,9 +1,15 @@
 package animal.wateranimal.cetacea;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Whale.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Whale extends Cetacea{
+    /**
+     * Konstruktor Whale
+     */
     public Whale() {
         super();
         species = "Balaenoptera musculus";

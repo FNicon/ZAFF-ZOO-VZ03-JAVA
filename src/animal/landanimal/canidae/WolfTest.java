@@ -15,35 +15,35 @@ class WolfTest {
     void getFoodNum() {
         Wolf E = new Wolf();
         int I = 100;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Wolf E = new Wolf();
         char C = 'W';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Wolf E = new Wolf();
         String S = "Canis lupus arctos";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Wolf E = new Wolf();
         String S = "Canidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Wolf E = new Wolf();
         String S = "Howl!";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

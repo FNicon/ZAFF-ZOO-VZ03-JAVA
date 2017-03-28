@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Nama         : Zacki Zulfikar Fauzi
+ * @author Zacki Zulfikar Fauzi
  * NIM          : 13515147
- * Nama File    : animal.airanimal.accipitridae.Eagle .java
+ * Nama File    : EagleTest.java
  * Tanggal      : 27-Mar-17
  */
 class EagleTest {
@@ -15,35 +15,35 @@ class EagleTest {
     void getFoodNum() {
         Eagle E = new Eagle();
         int I = 12;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Eagle E = new Eagle();
         char C = 'E';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Eagle E = new Eagle();
         String S = "Aquila chrysaetos";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Eagle E = new Eagle();
         String S = "Accipitridae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Eagle E = new Eagle();
         String S = "screeech!";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

@@ -14,7 +14,7 @@ class AmphibiTest {
     @Test
     void getType() {
         Amphibi A = new Amphibi();
-        assertTrue((A.GetType()[0]== 1)&&(A.GetType()[2]== 1));
+        assertTrue((A.getType()[0]== 1)&&(A.getType()[2]== 1));
     }
 
 }

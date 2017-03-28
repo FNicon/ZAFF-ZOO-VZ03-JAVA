@@ -1,9 +1,15 @@
 package animal.landanimal.equidae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Horse.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Horse extends Equidae {
+    /**
+     * Konstruktor Horse
+     */
     public Horse() {
         super();
         species = "Equus caballus";

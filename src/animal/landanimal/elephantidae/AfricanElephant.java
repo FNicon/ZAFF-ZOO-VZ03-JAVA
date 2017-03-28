@@ -3,10 +3,13 @@ package animal.landanimal.elephantidae;
 /**
  * Nama         : Zacki Zulfikar Fauzi
  * NIM          : 13515147
- * Nama File    : African_Elephant .java
+ * Nama File    : AfricanElephant.java
  * Tanggal      : ${DATE}
  */
 public class AfricanElephant extends Elephantidae{
+    /**
+     * Konstruktor AfricanElephant
+     */
     public AfricanElephant() {
         super();
         species = "Loxodonta";

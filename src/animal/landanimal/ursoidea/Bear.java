@@ -1,9 +1,15 @@
 package animal.landanimal.ursoidea;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Bear.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Bear extends Ursoidea{
+    /**
+     * Konstruktor Bear
+     */
     public Bear() {
         super();
         species = "Ursus arctos";

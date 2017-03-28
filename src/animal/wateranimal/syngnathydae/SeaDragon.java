@@ -3,9 +3,15 @@ package animal.wateranimal.syngnathydae;
 import animal.airanimal.phasianidae.Phasianidae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : SeaDragon.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class SeaDragon extends Syngnathydae {
+    /**
+     * Konstruktor SeaDragon
+     */
     public SeaDragon() {
         super();
         species = "Phycodurus eques";

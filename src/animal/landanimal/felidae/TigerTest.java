@@ -15,35 +15,35 @@ class TigerTest {
     void getFoodNum() {
         Tiger E = new Tiger();
         int I = 400;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Tiger E = new Tiger();
         char C = 'T';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Tiger E = new Tiger();
         String S = "Panthera tigris tigris";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Tiger E = new Tiger();
         String S = "Felidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Tiger E = new Tiger();
         String S = "ROAR!";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

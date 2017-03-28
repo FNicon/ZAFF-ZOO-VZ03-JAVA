@@ -15,35 +15,35 @@ class IndianPythonTest {
     void getFoodNum() {
         IndianPython E = new IndianPython();
         int I = 6;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         IndianPython E = new IndianPython();
         char C = 'F';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         IndianPython E = new IndianPython();
         String S = "Python molurus";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         IndianPython E = new IndianPython();
         String S = "Pythonidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         IndianPython E = new IndianPython();
         String S = "Hssssssh!";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

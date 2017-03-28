@@ -15,35 +15,35 @@ class ReindeerTest {
     void getFoodNum() {
         Reindeer E = new Reindeer();
         int I = 850;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Reindeer E = new Reindeer();
         char C = 'A';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Reindeer E = new Reindeer();
         String S = "Rangifer tarandus";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Reindeer E = new Reindeer();
         String S = "Cervidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Reindeer E = new Reindeer();
         String S = "It's a Reindeer";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

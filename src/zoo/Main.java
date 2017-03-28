@@ -17,28 +17,28 @@ public class Main {
         // write your code here
 
         Bear B = new Bear();
-        B.GetExperience();
-        System.out.println(B.GetRender());
+        B.getExperience();
+        System.out.println(B.getRender());
         System.out.println();
 
         Lion L = new Lion();
-        L.GetExperience();
-        System.out.println(L.GetRender());
+        L.getExperience();
+        System.out.println(L.getRender());
         System.out.println();
 
         Kijang C = new Kijang();
-        C.GetExperience();
-        System.out.println(C.GetRender());
+        C.getExperience();
+        System.out.println(C.getRender());
         System.out.println();
 
         Peacock M = new Peacock();
-        M.GetExperience();
-        System.out.println(M.GetRender());
+        M.getExperience();
+        System.out.println(M.getRender());
         System.out.println();
 
         Salamander S = new Salamander();
-        S.GetExperience();
-        System.out.println(S.GetRender());
+        S.getExperience();
+        System.out.println(S.getRender());
         System.out.println();
 
 

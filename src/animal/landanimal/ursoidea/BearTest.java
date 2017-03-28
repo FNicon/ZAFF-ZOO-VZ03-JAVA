@@ -15,35 +15,35 @@ class BearTest {
     void getFoodNum() {
         Bear E = new Bear();
         int I = 1410;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Bear E = new Bear();
         char C = 'B';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Bear E = new Bear();
         String S = "Ursus arctos";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Bear E = new Bear();
         String S = "Ursoidea";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Bear E = new Bear();
         String S = "BROAARGH";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

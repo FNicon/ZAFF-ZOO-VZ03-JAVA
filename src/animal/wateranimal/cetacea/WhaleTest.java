@@ -15,35 +15,35 @@ class WhaleTest {
     void getFoodNum() {
         Whale E = new Whale();
         int I = 300000;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Whale E = new Whale();
         char C = 'X';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Whale E = new Whale();
         String S = "Balaenoptera musculus";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Whale E = new Whale();
         String S = "Cetacea";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Whale E = new Whale();
         String S = "MASSIVE SEA-CREATURE";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

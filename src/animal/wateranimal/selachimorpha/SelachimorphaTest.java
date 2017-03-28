@@ -15,7 +15,7 @@ class SelachimorphaTest {
     void getFamili() {
         Selachimorpha E = new Selachimorpha();
         String S = "Selachimorpha";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

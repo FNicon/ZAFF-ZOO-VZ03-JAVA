@@ -15,7 +15,7 @@ class PhasianidaeTest {
     void getFamili() {
         Phasianidae E = new Phasianidae();
         String S = "Phasianidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

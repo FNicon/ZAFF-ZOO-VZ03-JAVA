@@ -1,7 +1,10 @@
 package animal.landanimal.canidae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Fox.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Fox extends Canidae{
     public Fox() {

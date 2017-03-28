@@ -3,10 +3,16 @@ package animal.landanimal.pythonidae;
 import animal.landanimal.LandAnimal;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Pythonidae.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Pythonidae extends LandAnimal {
-    public Pythonidae() {
+  /**
+   * Konstruktor Pythonidae
+   */
+  public Pythonidae() {
         super();
         famili = "Pythonidae";
     }

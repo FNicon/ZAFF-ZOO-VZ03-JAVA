@@ -15,7 +15,7 @@ class CanidaeTest {
     void getFamili() {
         Canidae E = new Canidae();
         String S = "Canidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

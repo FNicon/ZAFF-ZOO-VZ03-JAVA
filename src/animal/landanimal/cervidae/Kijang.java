@@ -1,11 +1,16 @@
 package animal.landanimal.cervidae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Kijang.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Kijang extends Cervidae{
-    public Kijang()
-    {
+    /**
+     * Konstruktor Kijang
+     */
+    public Kijang() {
         super();
         species = "Muntiacus muntjak";
         experience = "Siiii Kijang";

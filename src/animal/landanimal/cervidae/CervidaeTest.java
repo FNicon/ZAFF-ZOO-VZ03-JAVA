@@ -15,7 +15,7 @@ class CervidaeTest {
     void getFamili() {
         Cervidae E = new Cervidae();
         String S = "Cervidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

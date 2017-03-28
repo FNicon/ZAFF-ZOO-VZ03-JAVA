@@ -15,7 +15,7 @@ class CetaceaTest {
     void getFamili() {
         Cetacea E = new Cetacea();
         String S = "Cetacea";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

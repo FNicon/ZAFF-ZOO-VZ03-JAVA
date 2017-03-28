@@ -15,35 +15,35 @@ class HorseTest {
     void getFoodNum() {
         Horse E = new Horse();
         int I = 3000;
-        assertTrue(E.GetFoodNum()== I);
+        assertTrue(E.getFoodNum()== I);
     }
 
     @Test
     void getRender() {
         Horse E = new Horse();
         char C = 'J';
-        assertTrue(E.GetRender()== C);
+        assertTrue(E.getRender()== C);
     }
 
     @Test
     void getSpecies() {
         Horse E = new Horse();
         String S = "Equus caballus";
-        assertTrue(E.GetSpecies()== S);
+        assertTrue(E.getSpecies()== S);
     }
 
     @Test
     void getFamili() {
         Horse E = new Horse();
         String S = "Equidae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
     @Test
     void getIsiExperience() {
         Horse E = new Horse();
         String S = "Neiiiiigh!";
-        assertTrue(E.GetIsiExperience()== S);
+        assertTrue(E.getIsiExperience()== S);
     }
 
 }

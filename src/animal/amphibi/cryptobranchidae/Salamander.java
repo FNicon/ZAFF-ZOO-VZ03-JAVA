@@ -1,9 +1,15 @@
 package animal.amphibi.cryptobranchidae;
 
 /**
- * Created by asus on 27-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Salamander.java
+ * <br>Tanggal      : 27-Mar-17
  */
 public class Salamander extends Cryptobranchidae{
+    /**
+     * Konstruktor Salamander
+     */
     public Salamander()
     {
         super();

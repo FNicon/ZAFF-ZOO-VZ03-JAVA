@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Nama         : Zacki Zulfikar Fauzi
+ * @author Zacki Zulfikar Fauzi
  * NIM          : 13515147
- * Nama File    : animal.airanimal.accipitridae.Accipitridae .java
+ * Nama File    : AccipitridaeTest.java
  * Tanggal      : 27-Mar-17
  */
 class AccipitridaeTest {
@@ -15,7 +15,7 @@ class AccipitridaeTest {
     void getFamili() {
         Accipitridae E = new Accipitridae();
         String S = "Accipitridae";
-        assertTrue(E.GetFamili()== S);
+        assertTrue(E.getFamili()== S);
     }
 
 }

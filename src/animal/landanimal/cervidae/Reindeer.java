@@ -1,9 +1,15 @@
 package animal.landanimal.cervidae;
 
 /**
- * Created by asus on 26-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Reindeer.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Reindeer extends Cervidae{
+    /**
+     * Konstruktor Reindeer
+     */
     public Reindeer() {
         super();
         species = "Rangifer tarandus";

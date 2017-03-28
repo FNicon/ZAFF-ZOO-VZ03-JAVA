@@ -1,7 +1,10 @@
 package animal;
 
 /**
- * Created by asus on 25-Mar-17.
+ * Nama         : Zacki Zulfikar Fauzi
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Animal.java
+ * <br>Tanggal      : 25-Mar-17
  */
 public class Animal {
     /** Type habitat hewan. 0 : darat, 1 : udara, 2 : air
@@ -33,7 +36,7 @@ public class Animal {
     int top_enemy;
 
     public Animal() {
-        int i;
+      int i;
         type = new int[3];
         for(i=0;i<3;i++){
             type[i]=0;
@@ -43,7 +46,7 @@ public class Animal {
     }
     /** Komunikasi dengan hewan
      */
-    public void GetExperience() {
+    public void getExperience() {
         System.out.println( "Hewan ini tinggal di : ");
         if (type[0]==1) System.out.println("darat ");
         if (type[1]==1) System.out.println("udara ");
@@ -55,7 +58,7 @@ public class Animal {
         System.out.println(experience);
     }
 
-    public double GetFoodNum(){
+    public double getFoodNum(){
         double jumlah_makanan;
         if(jenis_makanan==1){
             jumlah_makanan=berat*0.5;
@@ -74,52 +77,52 @@ public class Animal {
     /**  Print karakter simbol pada peta
      * @return char
      */
-    public char GetRender() {
+    public char getRender() {
 
         return (animal_char);
     }
     /** Set karakter hewan
      * @param cc Karakter hewan tsb
      */
-    public void SetEnemy(char cc) {
+    public void setEnemy(char cc) {
         enemy_char[top_enemy] = cc;
         top_enemy++;
     }
     /** Ambil list musuh
      * @return List Musuh
      */
-    public char[] GetEnemy() {
+    public char[] getEnemy() {
         return enemy_char;
     }
     /** dapat jumlah musuh
      * @return jumlah musuh
      */
-    public int GetTopEnemy() {
+    public int getTopEnemy() {
         return top_enemy;
     }
 
     /** Ambil tipe habitat hewan
      * @return List habitat
      */
-    public int[] GetType() {
+    public int[] getType() {
         return (type);
     }
     /** Ambil species hewan
      * @return string species
      */
-    public String GetSpecies() {
+    public String getSpecies() {
         return species;
     }
     /** Ambil famili hewan
      * @return string famili
      */
-    public String GetFamili() {
+    public String getFamili() {
         return famili;
     }
     /** Ambil experience hewan
      * @return string experience
      */
-    public String GetIsiExperience() {
+    public String getIsiExperience() {
         return experience;
     }
 }

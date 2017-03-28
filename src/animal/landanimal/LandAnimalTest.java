@@ -14,7 +14,7 @@ class LandAnimalTest {
     @Test
     void getType() {
         LandAnimal A = new LandAnimal();
-        assertTrue(A.GetType()[0]== 1);
+        assertTrue(A.getType()[0]== 1);
     }
 
 }

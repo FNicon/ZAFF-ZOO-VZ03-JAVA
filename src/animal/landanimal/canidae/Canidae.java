@@ -4,9 +4,9 @@ import animal.landanimal.LandAnimal;
 
 /**
  * Nama         : Zacki Zulfikar Fauzi
- * NIM          : 13515147
- * Nama File    : ${CLASS_NAME} .java
- * Tanggal      : ${DATE}
+ * <br>NIM          : 13515147
+ * <br>Nama File    : Canidae.java
+ * <br>Tanggal      : 26-Mar-17
  */
 public class Canidae extends LandAnimal {
     public Canidae()    {
