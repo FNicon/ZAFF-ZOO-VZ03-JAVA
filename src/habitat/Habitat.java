@@ -6,25 +6,60 @@ import pointer.Pointer;
 
 /**
  * @author Finiko
- *
+ * Nama : Finiko Kasula Novenda
+ * NIM : 13515029
+ * Nama File : Habitat.java
+ * Tanggal : 28 Maret 2017
  */
 public class Habitat extends Pointer {
-  private int type;
+  /**
+   * ableType adalah apakah type habitat tertentu waterHabitat, airHabitat atau landHabitat. 1 jika iya.
+   */
+  private int ableType;
+  /**
+   * cageNumber adalah nomor urut cage di suatu habitat
+   */
   private int cageNumber;
-  
+  /**
+   * constructor Habitat
+   * @param x
+   * @param y
+   */
+  public Habitat(int x, int y){
+    super(x,y);
+  }
+  /**
+   * setter untuk cageNumber
+   * @param cageInput
+   */
   public void setCageNumber(int cageInput){
-	  cageNumber=cageInput;
+    cageNumber=cageInput;
   }
+  /**
+   * setter untuk ableType
+   * @param ableInput
+   */
+  public void setAbleType(int ableInput){
+    ableType=ableInput;
+  }
+  /**
+   * getter untuk cageNumber
+   * @return cageNumber
+   */
   public int getCageNumber(){
-	  return(cageNumber);
+    return(cageNumber);
   }
-  int getType(){
-	  return(type);
+  /**
+   * getter untuk ableType
+   * @return ableType
+   */
+  int getAbleType(){
+    return(ableType);
   }
-  public void setType(int type_input){
-	  type=type_input;
-  }
+  /**
+   * cek apakah habitat
+   */
   public boolean isHabitat(){
-	  return(true);
+    return(true);
   }
 }
