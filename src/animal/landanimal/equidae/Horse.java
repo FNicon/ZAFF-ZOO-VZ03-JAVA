@@ -15,7 +15,7 @@ public class Horse extends Equidae {
         species = "Equus caballus";
         experience = "Neiiiiigh!";
         berat = 6000;
-        animal_char = 'J';
+        animalChar = 'J';
         jenis_makanan =1;
     }
 }

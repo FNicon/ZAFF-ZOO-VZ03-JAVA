@@ -12,7 +12,7 @@ public class Wolf extends Canidae{
         species = "Canis lupus arctos";
         experience = "Howl!";
         berat = 500;
-        animal_char = 'W';
+        animalChar = 'W';
         jenis_makanan = 2;
     }
 }

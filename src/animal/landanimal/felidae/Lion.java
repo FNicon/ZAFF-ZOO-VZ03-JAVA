@@ -6,7 +6,7 @@ package animal.landanimal.felidae;
  * <br>Nama File    : Lion.java
  * <br>Tanggal      : 26-Mar-17
  */
-public class Lion extends Felidae{
+public class Lion extends Felidae {
     /**
      * Konstruktor Lion
      */
@@ -15,7 +15,7 @@ public class Lion extends Felidae{
         species = "Panthera leo";
         experience = "ROAAARRR!";
         berat = 1800;
-        animal_char = 'L';
+        animalChar = 'L';
         jenis_makanan =2;
         setEnemy('A');
     }

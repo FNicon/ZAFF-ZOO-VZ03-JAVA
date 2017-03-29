@@ -15,7 +15,7 @@ public class Reindeer extends Cervidae{
         species = "Rangifer tarandus";
         experience = "It's a Reindeer";
         berat = 1700;
-        animal_char = 'A';
+        animalChar = 'A';
         jenis_makanan =1;
     }
 }

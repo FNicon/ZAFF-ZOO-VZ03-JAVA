@@ -15,7 +15,7 @@ public class Whale extends Cetacea{
         species = "Balaenoptera musculus";
         experience = "MASSIVE SEA-CREATURE";
         berat = 1500000;
-        animal_char = 'X';
+        animalChar = 'X';
         jenis_makanan = 2;
     }
 }

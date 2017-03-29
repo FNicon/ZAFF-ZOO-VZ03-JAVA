@@ -15,7 +15,7 @@ public class Cockatoo extends Psittacifurmes {
         species = "Calyptorhynchus lathami";
         experience = "It can talk??";
         berat = 40;
-        animal_char = 't';
+        animalChar = 't';
         jenis_makanan = 1;
     }
 }

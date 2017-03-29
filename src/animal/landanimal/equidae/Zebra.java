@@ -17,7 +17,7 @@ public class Zebra extends Equidae {
         species = "Equus quagga";
         experience = "Its like a horse but black and white";
         berat = 3500;
-        animal_char = 'Z';
+        animalChar = 'Z';
         jenis_makanan = 1;
     }
 }

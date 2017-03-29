@@ -1,0 +1,106 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam class {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+Animal <|-- AirAnimal
+Animal <|-- WaterAnimal
+Animal <|-- LandAnimal
+Animal <|-- Amphibi
+Amphibi <|-- Cryptobranchidae
+Cryptobranchidae <|-- Salamander
+LandAnimal <|-- Felidae
+Felidae <|-- Lion
+Felidae <|-- Tiger
+Accipitridae <|-- Eagle
+AirAnimal <|-- Accipitridae
+WaterAnimal <|-- Cetacea
+Cetacea <|-- Whale
+AirAnimal <|-- Phasianidae
+Phasianidae <|-- Peacock
+
+class Animal {
+#int[] type;
+#String famili;
+#String species;
+#String experience;
+#short jenis_makanan;
+#int berat;
+#char animalChar;
+#char[] enemyChar;
+#int topEnemy;
++Animal();
++void getExperience();
++double getFoodNum();
++char getRender();
++void setEnemy(char cc);
++char[] getEnemy();
++int getTopEnemy();
++int[] getType();
++String getSpecies();
++String getFamili();
++String getIsiExperience();
+}
+
+class LandAnimal {
++LandAnimal();
+}
+
+class WaterAnimal {
++WaterAnimal();
+}
+
+class AirAnimal {
++AirAnimal();
+}
+
+class Amphibi {
++Amphibi();
+}
+
+class Cryptobranchidae {
++Cryptobranchidae();
+}
+
+class Salamander {
++Salamander();
+}
+
+class Accipitridae {
++Accipitridae();
+}
+
+class Eagle {
++Eagle();
+}
+class Felidae {
++Felidae();
+}
+
+class Lion {
++Lion();
+}
+
+class Tiger {
++Tiger();
+}
+
+class Cetacea {
++Cetacea();
+}
+
+class Whale {
++Whale();
+}
+
+class Phasianidae {
++Phasianidae();
+}
+
+class Peacock {
++Peacock();
+}
+@enduml

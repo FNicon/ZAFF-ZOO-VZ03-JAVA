@@ -15,7 +15,7 @@ public class Bear extends Ursoidea{
         species = "Ursus arctos";
         experience = "BROAARGH";
         berat = 4700;
-        animal_char = 'B';
+        animalChar = 'B';
         jenis_makanan = 3;
     }
 }

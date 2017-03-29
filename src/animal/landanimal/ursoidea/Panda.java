@@ -17,7 +17,7 @@ public class Panda extends Ursoidea {
         species = "Ailuropoda melanoleuca";
         experience = "The panda is eating bamboos";
         berat = 900;
-        animal_char = 'P';
+        animalChar = 'P';
         jenis_makanan = 1;
     }
 }

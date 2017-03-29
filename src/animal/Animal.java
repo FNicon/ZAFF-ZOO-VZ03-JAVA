@@ -27,13 +27,13 @@ public class Animal {
     protected int berat;
     /** Char yang digunakan untuk render
      */
-    protected char animal_char;
+    protected char animalChar;
     /** Array of char yang berisi list musuhnya
      */
-    protected char[] enemy_char;
+    protected char[] enemyChar;
     /** Pointer EnemyChar yang available
      */
-    int top_enemy;
+    protected int topEnemy;
 
     public Animal() {
       int i;
@@ -41,8 +41,8 @@ public class Animal {
         for(i=0;i<3;i++){
             type[i]=0;
         }
-        enemy_char = new char[10];
-        top_enemy = 0;
+        enemyChar = new char[10];
+        topEnemy = 0;
     }
     /** Komunikasi dengan hewan
      */
@@ -79,26 +79,26 @@ public class Animal {
      */
     public char getRender() {
 
-        return (animal_char);
+        return (animalChar);
     }
     /** Set karakter hewan
      * @param cc Karakter hewan tsb
      */
     public void setEnemy(char cc) {
-        enemy_char[top_enemy] = cc;
-        top_enemy++;
+        enemyChar[topEnemy] = cc;
+        topEnemy++;
     }
     /** Ambil list musuh
      * @return List Musuh
      */
     public char[] getEnemy() {
-        return enemy_char;
+        return enemyChar;
     }
     /** dapat jumlah musuh
      * @return jumlah musuh
      */
     public int getTopEnemy() {
-        return top_enemy;
+        return topEnemy;
     }
 
     /** Ambil tipe habitat hewan

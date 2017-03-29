@@ -15,7 +15,7 @@ public class Peacock extends Phasianidae{
     species = "Afropavo congensis";
     experience = "Rainbow Bird";
     berat = 50;
-    animal_char = 'M';
+    animalChar = 'M';
     jenis_makanan = 3;
     }
 }

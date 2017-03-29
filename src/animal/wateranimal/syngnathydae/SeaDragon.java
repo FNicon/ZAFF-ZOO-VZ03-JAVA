@@ -17,7 +17,7 @@ public class SeaDragon extends Syngnathydae {
         species = "Phycodurus eques";
         experience = "It's a Dragon but on water";
         berat = 10;
-        animal_char = 'V';
+        animalChar = 'V';
         jenis_makanan = 2;
     }
 }

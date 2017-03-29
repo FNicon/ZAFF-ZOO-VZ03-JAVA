@@ -14,7 +14,7 @@ public class WhiteShark extends Selachimorpha{
         species = "Carcharodon carcharias";
         experience = "It's a Big Shark";
         berat = 9000;
-        animal_char = 'S';
+        animalChar = 'S';
         jenis_makanan = 2;
         setEnemy('D');
     }

@@ -15,7 +15,7 @@ public class Kijang extends Cervidae{
         species = "Muntiacus muntjak";
         experience = "Siiii Kijang";
         berat = 1700;
-        animal_char = 'C';
+        animalChar = 'C';
         jenis_makanan = 1;
     }
 }

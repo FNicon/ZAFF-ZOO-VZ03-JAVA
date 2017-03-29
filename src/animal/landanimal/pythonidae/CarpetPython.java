@@ -15,7 +15,7 @@ public class CarpetPython extends Pythonidae{
         species = "Morelia spilota";
         experience = "SSSSSSSSSSSSSSSSSSSSSSSSS";
         berat = 120;
-        animal_char = 'Q';
+        animalChar = 'Q';
         jenis_makanan =2;
     }
 }

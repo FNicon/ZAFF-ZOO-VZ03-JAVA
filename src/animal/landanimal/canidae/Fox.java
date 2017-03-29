@@ -12,7 +12,7 @@ public class Fox extends Canidae{
         species = "Vulpes lagopus";
         experience = "What does the fox says ?";
         berat = 60;
-        animal_char = 'Y';
+        animalChar = 'Y';
         jenis_makanan=2;
     }
 }

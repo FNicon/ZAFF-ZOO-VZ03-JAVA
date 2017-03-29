@@ -12,7 +12,7 @@ public class Dolphin extends Cetacea{
         species = "Delphinus capensis";
         experience = "click click";
         berat = 20000;
-        animal_char = 'D';
+        animalChar = 'D';
         jenis_makanan = 2;
     }
 }

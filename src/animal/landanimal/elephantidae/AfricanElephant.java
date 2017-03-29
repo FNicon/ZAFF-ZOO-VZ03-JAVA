@@ -6,8 +6,8 @@ package animal.landanimal.elephantidae;
  * Nama File    : AfricanElephant.java
  * Tanggal      : ${DATE}
  */
-public class AfricanElephant extends Elephantidae{
-    /**
+public class AfricanElephant extends Elephantidae {
+    /**.
      * Konstruktor AfricanElephant
      */
     public AfricanElephant() {
@@ -15,7 +15,7 @@ public class AfricanElephant extends Elephantidae{
         species = "Loxodonta";
         experience = "This elephant originated from africa";
         berat = 60000;
-        animal_char = 'G';
+        animalChar = 'G';
         jenis_makanan =1;
     }
 }

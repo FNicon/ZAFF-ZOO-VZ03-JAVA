@@ -15,7 +15,7 @@ public class IndianPython extends Pythonidae{
         species = "Python molurus";
         experience = "Hssssssh!";
         berat = 30;
-        animal_char = 'F';
+        animalChar = 'F';
         jenis_makanan =2;
     }
 }

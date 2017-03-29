@@ -17,7 +17,7 @@ public class Eagle extends Accipitridae {
     species = "Aquila chrysaetos";
     experience = "screeech!";
     berat = 60;
-    animal_char = 'E';
+    animalChar = 'E';
     jenis_makanan = 2;
   }
 }

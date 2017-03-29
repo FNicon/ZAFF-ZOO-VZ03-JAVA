@@ -15,7 +15,7 @@ public class Tiger extends Felidae{
         species = "Panthera tigris tigris";
         experience = "ROAR!";
         berat = 2000;
-        animal_char = 'T';
+        animalChar = 'T';
         jenis_makanan =2;
         setEnemy('C');
     }
