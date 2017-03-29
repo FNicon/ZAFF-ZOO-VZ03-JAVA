@@ -53,7 +53,7 @@ public class Habitat extends Pointer {
    * getter untuk ableType
    * @return ableType
    */
-  public int getAbleType(){
+  int getAbleType(){
     return(ableType);
   }
   /**

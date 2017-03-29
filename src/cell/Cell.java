@@ -51,7 +51,7 @@ public class Cell{
         point[i][j]=new Pointer(i,j);
       }
     }
-    jumlahCage=2;
+    jumlahCage=30;
     listCage=new Cage[jumlahCage];
     counterCage=0;
   }
@@ -71,7 +71,7 @@ public class Cell{
     for(i=0;i<sizeX;i++){
       point[i]=new Pointer[sizeY];
     }
-    jumlahCage=2;
+    jumlahCage=jumlahKandang;
     listCage=new Cage[jumlahCage];
     counterCage=0;
   }
@@ -127,6 +127,13 @@ public class Cell{
     return(point[inputX][inputY]);  
   }
   /**
+   * getter untuk counterCage
+   * @return counterCage
+   */
+  public int getCounterCage(){
+    return(counterCage);
+  }
+  /**
    * setter untuk Point di posisi inputX dan inputY 
    * @param inputX
    * @param inputY
@@ -145,10 +152,10 @@ public class Cell{
     for(i=0;i<sizeX;i++){
       for(j=0;j<sizeY;j++){
         k=0;
-        while((k<counterCage)&&(!listCage[k].adaHewan(i,j))&&(listCage[k].isInCage(i,j))){
+        while((k<counterCage)&&(!listCage[k].isInCage(i,j))){
           k=k+1;
         }
-        if(k>0){
+        if(k>counterCage-1){
           k=k-1;
         }
         if(listCage[k].adaHewan(i,j)){
