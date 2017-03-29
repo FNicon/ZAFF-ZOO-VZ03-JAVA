@@ -29,15 +29,28 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args){
     char inputscan;
+    Pointer nowP;
     Salamander sal=new Salamander();
     Cage kandang=new Cage(0,20);
     Cell zoo=new Cell();
     int i,j;
     Scanner input;
-    for(i=0;i<zoo.getSizeX();i++){
-      for(j=0;j<zoo.getSizeY();j++){
+    for(i=1;i<zoo.getSizeX();i++){
+      zoo.setPoint(0,i,new LandHabitat(0,i));
+      nowP=zoo.getPoint(0,i);
+      nowP.setHabitat(new LandHabitat(0,i));
+    }
+    for(i=3;i<zoo.getSizeX();i++){
+      for(j=0;j<zoo.getSizeY()-2;j++){
         zoo.setPoint(i,j,new LandHabitat(i,j));
+        nowP=zoo.getPoint(i,j);
+        nowP.setHabitat(new LandHabitat(i,j));
       }
+    }
+    for(i=1;i<zoo.getSizeY()-2;i++){
+   	  zoo.setPoint(2,i,new LandHabitat(2,i));
+      nowP=zoo.getPoint(2,i);
+      nowP.setHabitat(new LandHabitat(2,i));
     }
     zoo.setPoint(1,0, new Entrance(1,0));
     zoo.setPoint(19,19, new Exit(19,19));

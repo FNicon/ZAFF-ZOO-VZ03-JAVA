@@ -127,6 +127,13 @@ public class Cell{
     return(point[inputX][inputY]);  
   }
   /**
+   * getter untuk counterCage
+   * @return counterCage
+   */
+  public int getCounterCage(){
+    return(counterCage);
+  }
+  /**
    * setter untuk Point di posisi inputX dan inputY 
    * @param inputX
    * @param inputY

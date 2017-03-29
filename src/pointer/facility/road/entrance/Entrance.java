@@ -1,35 +1,35 @@
 /**
  * 
  */
-package pointer.facility.park;
-import pointer.facility.Facility;
+package pointer.facility.road.entrance;
+import pointer.facility.road.Road;
 /**
  * @author Finiko
  * Nama : Finiko Kasula Novenda
  * NIM : 13515029
- * Nama File : Park.java
+ * Nama File : Entrance.java
  * Tanggal : 28 Maret 2017
  */
-public class Park extends Facility{
+public class Entrance extends Road{  
   /**
    * constructor
    * @param inputX
    * @param inputY
    */
-  public Park(int inputX, int inputY){
+  public Entrance(int inputX,int inputY){
     super(inputX,inputY);
   }
   /**
-   * cek apakah facility adalah park. true jika iya. false jika tidak.
+   * cek apakah road adalah jalan. true jika iya. false jika tidak.
    */
-  public boolean isPark(){
+  public boolean isEntrance(){
     return(true);
   }
   /**
-   * display character untuk Park
+   * display character untuk Entrance
    * @return character untuk didisplay
    */
   public char render(){
-	  return('#');
+	  return('>');
   }
 }

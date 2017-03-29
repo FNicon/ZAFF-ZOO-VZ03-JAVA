@@ -7,6 +7,7 @@ import cell.Cell;
 import java.util.Scanner;
 import pointer.Pointer;
 import cage.Cage;
+import habitat.Habitat;
 /**
  * @author Finiko
  * Nama : Finiko Kasula Novenda
@@ -59,10 +60,10 @@ public class Tour {
   public Pointer moveKiri(Cell zoo){
     Pointer nowLocation;
     nowLocation=zoo.getPoint(nowX,nowY);
-    if (nowX-1>0){
-      if(zoo.getPoint(nowX-1,nowY).isJalan()){
-        nowLocation=zoo.getPoint(nowX-1,nowY);
-        nowX=nowX-1;
+    if (nowY-1>0){
+      if(zoo.getPoint(nowX,nowY-1).isJalan()){
+        nowLocation=zoo.getPoint(nowX,nowY-1);
+        nowY=nowY-1;
       }
     }
     return(nowLocation);
@@ -75,10 +76,10 @@ public class Tour {
   public Pointer moveKanan(Cell zoo){
     Pointer nowLocation;
     nowLocation=zoo.getPoint(nowX,nowY);
-    if (nowX+1<zoo.getSizeX()){
-      if(zoo.getPoint(nowX+1,nowY).isJalan()){
-        nowLocation=zoo.getPoint(nowX+1,nowY);
-        nowX=nowX+1;
+    if (nowY+1<zoo.getSizeX()){
+      if(zoo.getPoint(nowX,nowY+1).isJalan()){
+        nowLocation=zoo.getPoint(nowX,nowY+1);
+        nowY=nowY+1;
       }
     }
     return(nowLocation);
@@ -90,11 +91,11 @@ public class Tour {
    */
   public Pointer moveAtas(Cell zoo){
     Pointer nowLocation;
-    nowLocation=zoo.getPoint(nowX,nowY-1);
-    if (nowY-1>0){
-      if(zoo.getPoint(nowX,nowY-1).isJalan()){
-        nowLocation=zoo.getPoint(nowX,nowY-1);
-        nowY=nowY-1;
+    nowLocation=zoo.getPoint(nowX,nowY);
+    if (nowX-1>0){
+      if(zoo.getPoint(nowX-1,nowY).isJalan()){
+        nowLocation=zoo.getPoint(nowX-1,nowY);
+        nowX=nowX-1;
       }
     }
     return(nowLocation);
@@ -106,11 +107,11 @@ public class Tour {
    */
   public Pointer moveBawah(Cell zoo){
     Pointer nowLocation;
-    nowLocation=zoo.getPoint(nowX,nowY+1);
-    if (nowY+1<zoo.getSizeX()){
-      if(zoo.getPoint(nowX,nowY+1).isJalan()){
-        nowLocation=zoo.getPoint(nowX,nowY+1);
-        nowY=nowY+1;
+    nowLocation=zoo.getPoint(nowX,nowY);
+    if (nowX+1<zoo.getSizeX()){
+      if(zoo.getPoint(nowX+1,nowY).isJalan()){
+        nowLocation=zoo.getPoint(nowX+1,nowY);
+        nowX=nowX+1;
       }
     }
     return(nowLocation);
@@ -121,7 +122,7 @@ public class Tour {
    * @return true jika diatas dari posisi sekarang adalah habitat. false jika bukan
    */
   public boolean checkUpHabitat(Cell zoo){
-    return((zoo.getPoint(nowX,nowY-1)).isHabitat());
+    return((zoo.getPoint(nowX-1,nowY)).isHabitat());
   }
   /**
    * mengecek apakah dibawah ada habitat
@@ -129,7 +130,7 @@ public class Tour {
    * @return true jika dibawah dari posisi sekarang adalah habitat. false jika bukan
    */
   public boolean checkDownHabitat(Cell zoo){
-    return((zoo.getPoint(nowX,nowY+1)).isHabitat());
+    return((zoo.getPoint(nowX+1,nowY)).isHabitat());
   }
   /**
    * mengecek apakah dikiri ada habitat
@@ -137,7 +138,7 @@ public class Tour {
    * @return true jika dikiri dari posisi sekarang adalah habitat. false jika bukan
    */
   public boolean checkLeftHabitat(Cell zoo){
-    return((zoo.getPoint(nowX-1,nowY)).isHabitat());
+    return((zoo.getPoint(nowX,nowY-1)).isHabitat());
   }
   /**
    * mengecek apakah di kanan ada habitat
@@ -145,7 +146,22 @@ public class Tour {
    * @return true jika dikanan dari posisi sekarang adalah habitat. false jika bukan
    */
   public boolean checkRightHabitat(Cell zoo){
-    return((zoo.getPoint(nowX+1,nowY)).isHabitat());
+    return((zoo.getPoint(nowX,nowY+1)).isHabitat());
+  }
+  public boolean checkDiDalam(Pointer check, Cell zoo){
+    int i;
+    boolean diDalam;
+    Cage tempListCage[];
+    tempListCage=zoo.getListCage();
+    i=0;
+    diDalam=false;
+    while((!diDalam)&&(i<zoo.getCounterCage())){
+      if(tempListCage[i].isInCage(check.getPositionX(),check.getPositionY())){
+        diDalam=true;
+      }
+      i=i+1;
+    }
+    return(diDalam);
   }
   /**
    * melihat habitat dari Pointer yang akan dicek
@@ -155,8 +171,8 @@ public class Tour {
   public void seeHabitat(Pointer check, Cell zoo){
     int number;
     Cage tempListCage[];
-    number=check.getHabitat().getCageNumber();
     tempListCage=zoo.getListCage();
+    number=check.getHabitat().getCageNumber();
     tempListCage[number].experienceHewan();
   }
   /**
@@ -164,28 +180,28 @@ public class Tour {
    * @param zoo
    */
   public void checkSurrounding(Cell zoo){
-    if(nowY>0){
-      if(checkUpHabitat(zoo)){
-        System.out.println("Di atas, ");
-        seeHabitat(zoo.getPoint(nowX, nowY-1),zoo);
-      }
-    }
     if(nowX>0){
-      if(checkLeftHabitat(zoo)){
-        System.out.println("Di kiri, ");
-        seeHabitat(zoo.getPoint(nowX-1, nowY),zoo);    	
+      if((checkUpHabitat(zoo))&&(checkDiDalam(zoo.getPoint(nowX-1, nowY),zoo))){
+        System.out.println("Di atas, ");
+        seeHabitat(zoo.getPoint(nowX-1, nowY),zoo);
       }
     }
-    if(nowX+1<zoo.getSizeX()){
-      if(checkRightHabitat(zoo)){
-        System.out.println("Di kanan, ");
-        seeHabitat(zoo.getPoint(nowX+1, nowY),zoo);
+    if(nowY>0){
+      if((checkLeftHabitat(zoo))&&(checkDiDalam(zoo.getPoint(nowX, nowY-1),zoo))){
+        System.out.println("Di kiri, ");
+        seeHabitat(zoo.getPoint(nowX, nowY-1),zoo);    	
       }
     }
     if(nowY+1<zoo.getSizeY()){
-      if(checkDownHabitat(zoo)){
-        System.out.println("Di bawah, ");
+      if((checkRightHabitat(zoo))&&(checkDiDalam(zoo.getPoint(nowX, nowY+1),zoo))){
+        System.out.println("Di kanan, ");
         seeHabitat(zoo.getPoint(nowX, nowY+1),zoo);
+      }
+    }
+    if(nowX+1<zoo.getSizeX()){
+      if((checkDownHabitat(zoo))&&(checkDiDalam(zoo.getPoint(nowX+1, nowY),zoo))){
+        System.out.println("Di bawah, ");
+        seeHabitat(zoo.getPoint(nowX+1, nowY),zoo);
       }
     }
   }
@@ -195,24 +211,42 @@ public class Tour {
    */
   public void gerak(Cell zoo){
     Scanner input;
+    //int i;
     char inputscan;
+    Pointer now;
+    //Cage tempListCage[];
+    //int counter;
+    //tempListCage=zoo.getListCage();
+    //counter=zoo.getCounterCage();
     input=new Scanner(System.in);
     inputscan=input.next().charAt(0);
     while(!(zoo.getPoint(nowX,nowY).isExit())){
       System.out.print(nowX);
       System.out.print(",");
-      System.out.print(nowY);
-      System.out.println("Pilih Jalan(w:atas.s:bawah,a:kiri,d:kanan)");
+      System.out.println(nowY);
+      zoo.gambar();
       checkSurrounding(zoo);
+      System.out.println("Pilih Jalan(w:atas.s:bawah,a:kiri,d:kanan)");
       if(inputscan=='w'){
-        moveAtas(zoo);
+        now=moveAtas(zoo);
+        nowX=now.getPositionX();
+        nowY=now.getPositionY();
       }else if(inputscan=='s'){
-        moveBawah(zoo);
+        now=moveBawah(zoo);
+        nowX=now.getPositionX();
+        nowY=now.getPositionY();
       }else if(inputscan=='d'){
-        moveKanan(zoo);
+        now=moveKanan(zoo);
+        nowX=now.getPositionX();
+        nowY=now.getPositionY();
       }else if(inputscan=='a'){
-        moveKiri(zoo);
+        now=moveKiri(zoo);
+        nowX=now.getPositionX();
+        nowY=now.getPositionY();
       }
+      //for(i=0;i<counter;i++){
+      //  tempListCage[i].move();
+      //}
       input=new Scanner(System.in);
       inputscan=input.next().charAt(0);
     }

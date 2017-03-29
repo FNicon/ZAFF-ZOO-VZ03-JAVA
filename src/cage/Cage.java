@@ -195,9 +195,10 @@ public class Cage {
    */
   public void move(){
     int moveCommand,i;
-    Random randomMove=new Random(3);
     for(i=0;i<counterAnimal;i++){
+      Random randomMove=new Random(3);
       moveCommand=randomMove.nextInt(3);
+      System.out.print(moveCommand);
       if(moveCommand==0){
         if(!(adaHewan(animalLocation[i].getPositionX()-1,animalLocation[i].getPositionY()))){
           animalLocation[i].setPositionX(animalLocation[i].getPositionX()-1);
