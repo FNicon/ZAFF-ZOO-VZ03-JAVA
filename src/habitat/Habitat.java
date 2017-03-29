@@ -9,22 +9,21 @@ import pointer.Pointer;
  *
  */
 public class Habitat extends Pointer {
-  private int type;
+  private int ableType;
   private int cageNumber;
-  
   public void setCageNumber(int cageInput){
-	  cageNumber=cageInput;
+    cageNumber=cageInput;
   }
   public int getCageNumber(){
-	  return(cageNumber);
+    return(cageNumber);
   }
-  int getType(){
-	  return(type);
+  int getAbleType(){
+    return(ableType);
   }
-  public void setType(int type_input){
-	  type=type_input;
+  public void setAbleType(int ableInput){
+    ableType=ableInput;
   }
   public boolean isHabitat(){
-	  return(true);
+    return(true);
   }
 }

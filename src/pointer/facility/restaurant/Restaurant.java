@@ -18,6 +18,6 @@ public class Restaurant extends Facility {
 	  return(true);
   }
   public char render(){
-	  return('R');
+	  return('@');
   }
 }

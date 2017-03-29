@@ -7,8 +7,8 @@ package cell;
  * @author Finiko
  *
  */
-import cage.Cage;
 import pointer.Pointer;
+import cage.Cage;
 
 public class Cell{
   /** ukuran x cell
@@ -17,86 +17,94 @@ public class Cell{
   /** ukuran y cell
     */
   private int sizeY;
-
   private Pointer point[][];
-
-  private Cage kandang[];
-
-  private int jumlahKandang;
-
-  /**  constructor
-   *  I.S Cell tidak terdefinisi
-   *  F.S Cell terdefinisi dengan ukuran default
+  private Cage listCage[];
+  private int jumlahCage;
+  private int counterCage;
+  
+  /** @brief constructor
+   *  @I.S Cell tidak terdefinisi
+   *  @F.S Cell terdefinisi dengan ukuran default
    */
   public Cell(){
-    sizeX=50;
-    sizeY=50;
+    sizeX=20;
+    sizeY=20;
     int i,j;
-    setCage(30);
-    point =new Pointer [sizeX][sizeY];
-    for (i=0; i<sizeX; i++){
-      for(j=0; j<sizeY; j++){
-        point[i][j] = new Pointer(i,j);
+    point = new Pointer[sizeX][sizeY];
+    for(i=0;i<sizeX;i++){
+      for(j=0;j<sizeY;j++){
+        point[i][j]=new Pointer(i,j);
       }
     }
+    jumlahCage=2;
+    listCage=new Cage[jumlahCage];
+    counterCage=0;
   }
-  /** brief Constructor dengan parameter
-   * @param inputX posisi X
-   * @param inputY posisi Y
-   * @param inputKandang jumlah kandang
-   * I.S x,y, dan jumlah_kandang terdefinisi
-   * F.S Cell terdefinisi dengan ukuran yang sesuai
+  /** @brief Constructor dengan parameter
+   * 
+   * @param x
+   * @param y
+   * @param jumlah_kandang
+   * @I.S x,y, dan jumlah_kandang terdefinisi
+   * @F.S Cell terdefinisi dengan ukuran yang sesuai
    */
-  public Cell(int inputX, int inputY, int inputKandang){
+  public Cell(int inputX, int inputY, int jumlahKandang){
     sizeX=inputX;
     sizeY=inputY;
-    int i,j;
-    setCage(inputKandang);
-    point =new Pointer [sizeX][sizeY];
-    for (i=0; i<sizeX; i++){
-      for(j=0; j<sizeY; j++){
-        point[i][j] = new Pointer(i,j);
-      }
+    int i;
+    Pointer point[][]=new Pointer[sizeX][];
+    for(i=0;i<sizeX;i++){
+      point[i]=new Pointer[sizeY];
     }
+    jumlahCage=2;
+    listCage=new Cage[jumlahCage];
+    counterCage=0;
   }
-  /**
-   * Setter Cage
-   * @param inputKandang jumlah kandang
+  /** @brief 
+   * 
    */
-  public void setCage(int inputKandang){
-    jumlahKandang = inputKandang;
-    kandang = new Cage[jumlahKandang];
+  public void setCage(Cage inputCage){
+    listCage[counterCage]=inputCage;
+    listCage[counterCage].setCageNumber(counterCage);
+    counterCage=counterCage+1;
   }
-  /**
-   * Getter sizeX
-   * @return sizeX
-   */
+  public Cage[] getListCage(){
+    return(listCage);
+  }
+  public double getMakananTotal(){
+    int i;
+    double totalMakan;
+    totalMakan=0;
+    for(i=0;i<counterCage;i++){
+      totalMakan=totalMakan+listCage[counterCage].getJumlahMakan();
+    }
+    return(totalMakan);
+  }
   public int getSizeX(){
     return(sizeX);
   }
-  /**
-   * Getter sizeY
-   * @return sizeY
-   */
   public int getSizeY(){
     return(sizeY);
   }
-  /**
-   * @param inputX posisi X
-   * @param inputY posisi Y
-   * @return Pointer
-   */
   public Pointer getPoint(int inputX, int inputY){
     return(point[inputX][inputY]);  
   }
-  /**
-   * @param inputX posisi X
-   * @param inputY posisi Y
-   * @param inputPoint jenis point
-   * I.S x,y, dan jumlah_kandang terdefinisi
-   * F.S Cell terdefinisi dengan ukuran yang sesuai
+  /* 
+   * @param inputX
+   * @param inputY
+   * @I.S x,y, dan jumlah_kandang terdefinisi
+   * @F.S Cell terdefinisi dengan ukuran yang sesuai
    */
   public void setPoint(int inputX, int inputY, Pointer inputPoint){
     point[inputX][inputY]=inputPoint;
+  }
+  public void gambar(){
+    int i,j;
+    for(i=0;i<sizeX;i++){
+      for(j=0;j<sizeY;j++){
+        System.out.print(getPoint(i,j).render());
+      }
+      System.out.println();
+    }
   }
 }
