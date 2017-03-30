@@ -195,24 +195,32 @@ public class Cage {
    */
   public void move(){
     int moveCommand,i;
-    Random randomMove=new Random(3);
     for(i=0;i<counterAnimal;i++){
+      Random randomMove=new Random();
       moveCommand=randomMove.nextInt(3);
       if(moveCommand==0){
-        if(!(adaHewan(animalLocation[i].getPositionX()-1,animalLocation[i].getPositionY()))){
-          animalLocation[i].setPositionX(animalLocation[i].getPositionX()-1);
+        if(isInCage(animalLocation[i].getPositionX(),animalLocation[i].getPositionY()-1)){
+          if(!(adaHewan(animalLocation[i].getPositionX(),animalLocation[i].getPositionY()-1))){
+            animalLocation[i].setPositionX(animalLocation[i].getPositionY()-1);
+          }
         }
       }else if(moveCommand==1){
-        if(!(adaHewan(animalLocation[i].getPositionX()+1,animalLocation[i].getPositionY()))){
-          animalLocation[i].setPositionX(animalLocation[i].getPositionX()+1);
+        if(isInCage(animalLocation[i].getPositionX()+1,animalLocation[i].getPositionY())){
+          if(!(adaHewan(animalLocation[i].getPositionX()+1,animalLocation[i].getPositionY()))){
+            animalLocation[i].setPositionX(animalLocation[i].getPositionX()+1);
+          }
         }
       }else if(moveCommand==2){
-        if(!(adaHewan(animalLocation[i].getPositionX(),animalLocation[i].getPositionY()+1))){
-          animalLocation[i].setPositionY(animalLocation[i].getPositionY()+1);
+        if(isInCage(animalLocation[i].getPositionX()-1,animalLocation[i].getPositionY())){
+          if(!(adaHewan(animalLocation[i].getPositionX()-1,animalLocation[i].getPositionY()))){
+            animalLocation[i].setPositionX(animalLocation[i].getPositionX()-1);
+          }
         }
       }else if(moveCommand==3){
-        if(!(adaHewan(animalLocation[i].getPositionX(),animalLocation[i].getPositionY()-1))){
-          animalLocation[i].setPositionY(animalLocation[i].getPositionY()-1);
+        if(isInCage(animalLocation[i].getPositionX(),animalLocation[i].getPositionY()+1)){
+          if(!(adaHewan(animalLocation[i].getPositionX(),animalLocation[i].getPositionY()+1))){
+            animalLocation[i].setPositionY(animalLocation[i].getPositionY()+1);
+          }
         }
       }
     }
@@ -226,7 +234,7 @@ public class Cage {
   public char getRender(int x,int y){
     int i;
     i=0;
-	while ((i<counterAnimal)&&(x!=animalLocation[i].getPositionX())&&(y!=animalLocation[i].getPositionY())){ 
+	while ((i<counterAnimal)&&((x!=animalLocation[i].getPositionX())||(y!=animalLocation[i].getPositionY()))){ 
 	  i=i+1;
 	}
 	return(animalData[i].getRender());
@@ -266,5 +274,12 @@ public class Cage {
    */
   public int getCounterAnimal(){
     return(counterAnimal);
+  }
+  /**
+   * getter untuk luasCage
+   * @return luasCage
+   */
+  public int getLuasCage(){
+    return(luasCage);
   }
 }
